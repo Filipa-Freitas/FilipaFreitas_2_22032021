@@ -1,0 +1,66 @@
+body {
+    font-family: raleway, Arial, Helvetica, sans-serif;
+    width: auto;
+}
+
+h1, h2 {
+    font-weight: bold;
+    font-size: 1.3em;
+}
+h3 {
+    font-weight: bold;
+    font-size: 1em;
+}
+p {
+    font-size: 0.8em;
+    font-weight: normal;
+}
+
+/*header*/
+.only_desktop {
+    display: none;
+}
+
+.subscribe a {
+    text-decoration: none;
+    font-weight: bold;
+    color: #0065FC;
+}
+
+.container_logo {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.container_nav ul {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    padding: 0;
+}
+.container_nav li {
+    width : 50%;
+
+}
+/*search section*/
+/*main*/
+.card_img img{
+    width: 100%;
+}
+
+/*popular section*/
+.popular {
+    background-color: #F2F2F2;
+}
+.popular_title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.container_popular_cards .card .card_text {
+    background-color: white;
+}
+.container_popular_cards .card {
+    display: flex;
+}
