@@ -1,19 +1,24 @@
 body {
     font-family: raleway, Arial, Helvetica, sans-serif;
+    font-size: 62.5%;
     width: auto;
 }
 
 h1, h2 {
     font-weight: bold;
-    font-size: 1.3em;
+    font-size: 5.5em;
 }
 h3 {
     font-weight: bold;
-    font-size: 1em;
+    font-size: 4em;
 }
-p {
-    font-size: 0.8em;
+p,li{
+    font-size: 3.5em;
     font-weight: normal;
+    list-style: none;
+}
+a{
+    text-decoration: none;
 }
 
 /*header*/
@@ -24,6 +29,7 @@ p {
 .subscribe a {
     text-decoration: none;
     font-weight: bold;
+    font-size: 4em;
     color: #0065FC;
 }
 
@@ -32,16 +38,17 @@ p {
     justify-content: space-around;
     align-items: center;
 }
+.logo img{
+    width: 200px;
+}
 
 .container_nav ul {
     display: flex;
     justify-content: space-between;
-    list-style: none;
     padding: 0;
 }
 .container_nav li {
     width : 50%;
-
 }
 /*search section*/
 /*main*/
@@ -60,7 +67,15 @@ p {
 }
 .container_popular_cards .card .card_text {
     background-color: white;
+    border-radius: 10px;
 }
 .container_popular_cards .card {
     display: flex;
+    justify-content: space-between;
+    border-radius: 10px;
+    background-color: white;
+    margin: 10px;
+}
+.container_popular_cards .card_img1 {
+    background-image: url(images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg);
 }
