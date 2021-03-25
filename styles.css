@@ -1,7 +1,7 @@
 body {
     font-family: raleway, Arial, Helvetica, sans-serif;
     font-size: 62.5%;
-    width: auto;
+
 }
 
 h1, h2 {
@@ -19,6 +19,10 @@ p,li{
 }
 a{
     text-decoration: none;
+    color: black;
+}
+ul {
+    padding: 0;
 }
 
 /*header*/
@@ -35,8 +39,10 @@ a{
 
 .container_logo {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
+    margin: 5% 5% 0% 5%;
+
 }
 .logo img{
     width: 200px;
@@ -44,38 +50,52 @@ a{
 
 .container_nav ul {
     display: flex;
-    justify-content: space-between;
     padding: 0;
 }
 .container_nav li {
     width : 50%;
+    text-align: center;
+    border-bottom: 5px solid #F2F2F2;
 }
+.container_nav a:focus {
+    border-bottom: 5px solid #0065FC;
+    border-width: 100%;
+}
+
 /*search section*/
+
 /*main*/
-.card_img img{
-    width: 100%;
-}
 
 /*popular section*/
 .popular {
     background-color: #F2F2F2;
 }
+
 .popular_title {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-.container_popular_cards .card .card_text {
-    background-color: white;
-    border-radius: 10px;
-}
+
 .container_popular_cards .card {
     display: flex;
     justify-content: space-between;
-    border-radius: 10px;
+    border-radius: 35px;
+    /* margin-top: 5%; */
+    height: 300px;
+    border: 20px solid white;
     background-color: white;
-    margin: 10px;
+
 }
-.container_popular_cards .card_img1 {
-    background-image: url(images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg);
+.container_popular_cards .card .card_img1 {
+    width: 40%;
+    border-radius: 30px 0 0 30px;
+    background: url("./images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg");
+}
+
+.container_popular_cards .card .card_text {
+    width: 60%;
+    background-color: white;
+    border-radius: 0px 20px 20px 0;
+    text-align: left;
 }
