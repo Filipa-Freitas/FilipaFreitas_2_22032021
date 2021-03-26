@@ -26,7 +26,7 @@ ul {
 }
 
 /*header*/
-.only_desktop {
+.only-desktop {
     display: none;
 }
 
@@ -37,7 +37,7 @@ ul {
     color: #0065FC;
 }
 
-.container_logo {
+.container-logo {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -48,16 +48,16 @@ ul {
     width: 200px;
 }
 
-.container_nav ul {
+.container-nav ul {
     display: flex;
     padding: 0;
 }
-.container_nav li {
+.container-nav li {
     width : 50%;
     text-align: center;
     border-bottom: 5px solid #F2F2F2;
 }
-.container_nav a:focus {
+.container-nav a:focus {
     border-bottom: 5px solid #0065FC;
     border-width: 100%;
 }
@@ -71,13 +71,13 @@ ul {
     background-color: #F2F2F2;
 }
 
-.popular_title {
+.popular-title {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.container_popular_cards .card {
+.container-popular-cards .card {
     display: flex;
     justify-content: space-between;
     border-radius: 35px;
@@ -87,13 +87,13 @@ ul {
     background-color: white;
 
 }
-.container_popular_cards .card .card_img1 {
+.container-popular-cards .card .card-img1 {
     width: 40%;
     border-radius: 30px 0 0 30px;
     background: url("./images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg");
 }
 
-.container_popular_cards .card .card_text {
+.container-popular-cards .card .card-text {
     width: 60%;
     background-color: white;
     border-radius: 0px 20px 20px 0;
