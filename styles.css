@@ -88,11 +88,40 @@ ul {
 .search {
     padding: 0 5% 0 5%;
 }
+.filters p {
+    font-weight: bold;
+    font-size: 4em;
+    margin-bottom: 2%;
+}
+.filters span {
+    font-size: 3.5em;
+    font-weight: bold;
+}
+.filters i {
+    color: #0065FC;
+    font-size: 3em;
+}
+.filter {
+    border: 2px solid #F2F2F2;
+}
 .info {
     display: flex;
 }
+.info i {
+    color: #0065FC;
+    font-size: 1.5em;
+    padding-left: 10px;
+    padding-top : 5px;
+}
+.info .circle {
+    background-color: white;
+    border: 2px solid #F2F2F2;
+    border-radius: 50%;
+    height: 30px;
+    width: 30px;
+    margin-right: 1%;
+}
 /*main*/
-
 /*popular section*/
 .popular {
     background-color: #F2F2F2;
@@ -114,10 +143,10 @@ ul {
     justify-content: space-between;
     border-radius: 30px;
     height: 350px;
-    border: 10px solid white;
     background-color: white;
     margin-bottom: 2%;
     box-shadow:10px 10px 20px #6b6b6b41;
+    padding: 10px;
 }
 .container-popular-cards .card-text {
     width: 60%;
@@ -164,17 +193,17 @@ ul {
 .container-lodging-cards .card  {
     border-radius: 30px;
     height: 500px;
-    border: 10px solid white;
     background-color: white;
     margin-bottom: 2%;
     box-shadow:10px 10px 20px #6b6b6b41;
+    padding: 10px;
 }
 .container-lodging-cards .card-text {
-    height: 40%;
     background-color: white;
     border-radius: 0px 20px 20px 0;
     text-align: left;
-    padding: 1% 0% 0 3%;
+    padding-left: 3%;
+    padding-top: 2%;
 }
 .container-lodging-cards .one .card-img {
     height: 60%;
