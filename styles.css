@@ -22,6 +22,10 @@ a {
 ul {
     padding: 0;
 }
+.fa-star {
+    color: #0065FC;
+    font-size: 3.5em;
+}
 /*header*/
 .only-desktop {
     display: none;
@@ -50,42 +54,76 @@ ul {
     text-align: center;
     border-bottom: 5px solid #F2F2F2;
 }
-.container-nav a:active {
+.container-nav a:focus {
     border-bottom: 5px solid #0065FC;
     border-width: 100%;
 }
-
 /*search section*/
-
+.info {
+    display: flex;
+}
 /*main*/
 
 /*popular section*/
 .popular {
     background-color: #F2F2F2;
 }
+.popular-title, .container-popular-cards {
+    padding: 5%;
+}
 .popular-title {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-.container-popular-cards .card {
+.container-popular-cards .card  {
     display: flex;
     justify-content: space-between;
-    border-radius: 35px;
-    /* margin-top: 5%; */
-    height: 300px;
-    border: 20px solid white;
+    border-radius: 30px;
+    height: 350px;
+    border: 10px solid white;
     background-color: white;
 
 }
-.container-popular-cards .card .card-text {
+.container-popular-cards .card-text {
     width: 60%;
     background-color: white;
     border-radius: 0px 20px 20px 0;
     text-align: left;
+    padding: 2%;
 }
-.container-popular-cards .card .card-img1 {
+.container-popular-cards .two .card-text i:nth-last-child(1) {
+    color: #F2F2F2;
+}
+.container-popular-cards .three .card-text i:nth-last-child(1) {
+    color: #F2F2F2;
+}
+.container-popular-cards .one .card-img {
     width: 40%;
     border-radius: 30px 0 0 30px;
     background: url("./images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg");
+    background-position: center;
+}
+.container-popular-cards .two .card-img {
+    width: 40%;
+    border-radius: 30px 0 0 30px;
+    background: url("./images/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg");
+    background-position: center;
+}
+.container-popular-cards .three .card-img {
+    width: 40%;
+    border-radius: 30px 0 0 30px;
+    background: url("./images/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg");
+    background-position: center;
+}
+/*lodging*/
+
+/*activities*/
+/*footer*/
+footer {
+    background: #F2F2F2;
+    padding: 5%;
+}
+footer li {
+    padding-bottom: 2%;
 }
