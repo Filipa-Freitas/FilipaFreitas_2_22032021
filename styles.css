@@ -1,3 +1,23 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
 body {
     font-family: raleway, Arial, Helvetica, sans-serif;
     font-size: 62.5%;
@@ -9,11 +29,17 @@ h1, h2 {
 h3 {
     font-weight: bold;
     font-size: 4em;
+    margin-bottom: 2%;
 }
-p,li {
+li {
     font-size: 3.5em;
     font-weight: normal;
     list-style: none;
+}
+p {
+    font-size: 3.5em;
+    font-weight: normal;
+    margin-bottom: 2%;
 }
 a {
     text-decoration: none;
@@ -24,7 +50,7 @@ ul {
 }
 .fa-star {
     color: #0065FC;
-    font-size: 3.5em;
+    font-size: 3em;
 }
 /*header*/
 .only-desktop {
@@ -59,6 +85,9 @@ ul {
     border-width: 100%;
 }
 /*search section*/
+.search {
+    padding: 0 5% 0 5%;
+}
 .info {
     display: flex;
 }
@@ -68,13 +97,17 @@ ul {
 .popular {
     background-color: #F2F2F2;
 }
-.popular-title, .container-popular-cards {
-    padding: 5%;
+.container-popular-cards {
+    padding: 5% 5% 5% 5%;
 }
 .popular-title {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 5% 5% 0 5%;
+}
+.popular-title i {
+    font-size: 5.5em;
 }
 .container-popular-cards .card  {
     display: flex;
@@ -83,14 +116,15 @@ ul {
     height: 350px;
     border: 10px solid white;
     background-color: white;
-
+    margin-bottom: 2%;
+    box-shadow:10px 10px 20px #6b6b6b41;
 }
 .container-popular-cards .card-text {
     width: 60%;
     background-color: white;
     border-radius: 0px 20px 20px 0;
     text-align: left;
-    padding: 2%;
+    padding: 5%;
 }
 .container-popular-cards .two .card-text i:nth-last-child(1) {
     color: #F2F2F2;
@@ -117,8 +151,45 @@ ul {
     background-position: center;
 }
 /*lodging*/
-
+#lodging {
+    padding: 5% 5% 5% 5%;
+}
+#lodging a {
+    font-size: 4em;
+    font-weight: bold;
+}
+#lodging h2 {
+    margin-bottom: 5%;
+}
+.container-lodging-cards .card  {
+    border-radius: 30px;
+    height: 500px;
+    border: 10px solid white;
+    background-color: white;
+    margin-bottom: 2%;
+    box-shadow:10px 10px 20px #6b6b6b41;
+}
+.container-lodging-cards .card-text {
+    height: 40%;
+    background-color: white;
+    border-radius: 0px 20px 20px 0;
+    text-align: left;
+    padding: 1% 0% 0 3%;
+}
+.container-lodging-cards .one .card-img {
+    height: 60%;
+    border-radius: 30px 30px 0px 0px;
+    background: url("./images/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg");
+    background-position: center;
+}
 /*activities*/
+#activities a {
+    font-size: 4em;
+    font-weight: bold;
+}
+#activities {
+    padding: 0 5% 0 5%;
+}
 /*footer*/
 footer {
     background: #F2F2F2;
