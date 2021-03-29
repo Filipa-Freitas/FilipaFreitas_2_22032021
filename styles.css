@@ -94,38 +94,70 @@ header {
     margin-bottom: 5%;
     padding: 0 5% 0 5%;
 }
-.filters p {
+.filters-title {
     font-weight: bold;
     font-size: 4em;
     margin-bottom: 2%;
 }
+
 .filter span {
     font-size: 3.5em;
     font-weight: bold;
-    padding-left: 2%;
+    padding-left: 15%;
+}
+
+.filter {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    border: solid 5px #F2F2F2;
+    border-radius: 8em;
+    height: 80px;
     margin-bottom: 2%;
 }
-.filter span::before {
+/*.filter::before {
     font-family: "Font Awesome 5 Free";
     content: "\f53a";
+    font-weight: 900;
+    font-size: 3em;
     color: #0065FC;
     background-color: #DEEBFF;
     border-radius: 50%;
+    padding: 1em;
     position: absolute;
-}
+    left: 50px;
+}*/
 .filter i {
     color: #0065FC;
     font-size: 3em;
     background-color: #DEEBFF;
     border-radius: 50%;
     padding: 1em;
+    position: absolute;
+    left: 50px;
 }
-.filter {
-    border: solid 5px #F2F2F2;
-    border-radius: 8em;
-    margin-bottom: 2%;
+/*.info p::before {
+    font-family: "Font Awesome 5 Free";
+    content: "\f129";
+    font-weight: 900;
+    font-size: 0.5em;
+    color: #0065FC;
+    border: #F2F2F2 solid 3px;
+    border-radius: 50%;
+    padding: 2% 3% 2% 3%;
+}*/
+.info i {
+    font-size: 2em;
+    color: #0065FC;
+    border: #F2F2F2 solid 3px;
+    border-radius: 50%;
+    padding: 0.5em 0.9em 0.5em 0.9em;
 }
-/*main*/
+.info {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
 /*popular section*/
 .popular {
     background-color: #F2F2F2;
@@ -164,7 +196,7 @@ header {
 .container-popular-cards .two .card-text i:nth-last-child(1) {
     color: #F2F2F2;
 }
-.container-popular-cards .three .card-text i:nth-last-child(-n+2) {
+.container-popular-cards .three .card-text i:nth-last-child(1) {
     color: #F2F2F2;
 }
 .container-popular-cards .card.one .card-img {
@@ -280,6 +312,7 @@ header {
 .container-activities-cards .two-small .card-img {
     background: url("./images/activites/3_medium/paul-hermann-QFTrLdQIRhI-unsplash.jpg");
     background-position:center;
+    background-size: cover;
 }
 .container-activities-cards .three-small .card-img {
     background: url("./images/activites/3_medium/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg");
