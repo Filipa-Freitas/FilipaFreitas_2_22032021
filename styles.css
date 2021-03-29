@@ -45,14 +45,17 @@ a {
     text-decoration: none;
     color: black;
 }
-ul {
-    padding: 0;
-}
 .fa-star {
     color: #0065FC;
     font-size: 3em;
 }
 /*header*/
+header {
+    margin: 5% 0 5% 0;
+}
+.container-logo {
+    padding : 0 5% 0 5%;
+}
 .only-desktop {
     display: none;
 }
@@ -66,7 +69,6 @@ ul {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 5% 5% 0% 5%;
 }
 .logo img {
     width: 200px;
@@ -152,7 +154,6 @@ ul {
     padding: 10px;
 }
 .container-popular-cards .card-text {
-    width: 60%;
     background-color: white;
     border-radius: 0px 30px 30px 0;
     text-align: left;
