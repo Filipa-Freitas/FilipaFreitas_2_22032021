@@ -99,6 +99,8 @@ h1 {
     margin-bottom: 2%;
 }
 form {
+    width: 100%;
+    display: flex;
     margin-top: 3%;
     margin-bottom: 3%;
 }
@@ -106,6 +108,7 @@ input {
     font-size: 3.5em;
     padding: 2%;
     border: solid 2px #F2F2F2;
+    width: 100%;
 }
 button {
     font-size: 3.5em;
@@ -113,6 +116,7 @@ button {
     border: none;
     border-radius: 20px;
     padding: 2% 2.5%;
+    cursor: pointer;
 }
 button i {
     color: white;
@@ -121,7 +125,7 @@ button i {
      font-size: 3.5em;
      background-color: #F2F2F2;
      padding: 2.5% 4%;
-     border-radius: 20px 0 0 20px;;
+     border-radius: 20px 0 0 20px;
 }
 .filters {
     margin-bottom: 3%;
@@ -131,67 +135,61 @@ button i {
     font-size: 4em;
     margin-bottom: 2%;
 }
-
 .filter span {
     font-size: 3.5em;
     font-weight: bold;
     margin-left: 3em;
-/*    border: solid 5px #F2F2F2;
-    border-radius: 8em;
-    padding: 0.5em 0.5em 0.5em 0.5em;*/
-    
+}
+.container-filters {
+    display: flex;
+    flex-wrap: wrap;
 }
 .filter {
+    margin: 0% 2% 2% 0;
+}
+.filter a {
     display: flex;
     justify-content: flex-start;
-    align-items: center;
-    margin-bottom: 2%;
+    align-items: center;  
     border: solid 5px #F2F2F2;
     border-radius: 8em;
     height: 8em;
-    width: 50%;
+    position: relative;
+    padding-right: 2.5em;
 }
-/*.money::before {
-    font-family: "Font Awesome 5 Free";
-    content: "\f53a";
-    font-weight: 900;
-    font-size: 1em;
-    color: #0065FC;
-    background-color: #DEEBFF;
-    border-radius: 50%;
-    padding: 2%;
-    position: absolute;
-}*/
+/* .filter {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 1% 1% 1% 0;
+    border: solid 5px #F2F2F2;
+    border-radius: 8em;
+    height: 8em;
+    max-width: 60%;
+    position: relative;
+    padding-right: 2.5em;
+} */
 .filter i {
     color: #0065FC;
     font-size: 3em;
     background-color: #DEEBFF;
     border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     height: 3em;
     width: 3em;
+    line-height: 3em;
     position: absolute;
-    left:45px;
+    left:-5px;   
+    text-align: center;
 }
-/*.info p::before {
-    font-family: "Font Awesome 5 Free";
-    content: "\f129";
-    font-weight: 900;
-    font-size: 0.5em;
-    color: #0065FC;
-    border: #F2F2F2 solid 3px;
-    border-radius: 50%;
-    padding: 0.5em 0.9em 0.5em 0.9em;
-    
-}*/
 .info i {
     font-size: 2em;
     color: #0065FC;
     border: #F2F2F2 solid 3px;
     border-radius: 50%;
-    padding: 0.5em 0.9em 0.5em 0.9em;
+    height: 2em;
+    width: 2em;
+    line-height: 2em;
+    text-align: center;
 }
 .info {
     display: flex;
