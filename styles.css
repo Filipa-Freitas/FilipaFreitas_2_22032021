@@ -30,7 +30,7 @@ h1, h2 {
 h3 {
     font-weight: bold;
     font-size: 1rem;
-    margin-bottom: 2%;
+    margin-bottom: 0.5em;
 }
 li {
     font-size: 1rem;
@@ -40,7 +40,7 @@ li {
 p {
     font-size: 1rem;
     font-weight: normal;
-    margin-bottom: 2%;
+    margin-bottom: 0.5em;
 }
 a {
     text-decoration: none;
@@ -48,7 +48,7 @@ a {
 }
 .fa-star {
     color: #0065FC;
-    font-size: 0.8rem;
+    font-size: 0.7rem;
 }
 .card-text p {
     font-size: 0.8rem;
@@ -245,7 +245,7 @@ button i {
     background-color: white;
     border-radius: 0px 15px 15px 0;
     text-align: left;
-    padding: 5%;
+    padding: 1rem;
 }
 .container-popular-cards .two .card-text i:nth-last-child(1) {
     color: #F2F2F2;
@@ -290,8 +290,7 @@ button i {
     background-color: white;
     border-radius: 0px 15px 15px 0;
     text-align: left;
-    padding-left: 3%;
-    padding-top: 3%;
+    padding: 0.5rem;
 }
 .container-lodging-cards .card.one .card-text i:nth-last-child(1) {
     color: #F2F2F2;
@@ -356,8 +355,8 @@ button i {
 .container-activities-cards .card-text {
     background-color: white;
     border-radius: 0px 15px 15px 0;
-    padding-left: 3%;
-    padding-top: 6%;
+    padding-left: 0.5rem;
+    padding-top: 1rem;
 }
 .container-activities-cards .card .card-img {
     min-height: 70%;
@@ -403,28 +402,38 @@ footer li {
     margin-bottom: 3%;
 }
 
-/*@media only screen and (min-width: 768px)
+@media only screen and (min-width: 768px)
 {
-    body 
-    {
-        font-size: 40%;
-    }
 
-    .container-lodging-cards, .container-activities-cards
+    .container-lodging-cards
     {
         display: flex;
         justify-content: space-between;
         flex-wrap: wrap;
     }
-
-    .container-lodging-cards .card, .container-activities-cards .card
-    {
+    .container-lodging-cards .card {
         min-width: 45%;
     }
 
+    .container-activities-cards {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        align-items: flex-start;
 
+    }
+    .container-activities-cards .card {
+        min-width: 45%;
+        
+    }
+    .container-activities-cards .one, .container-activities-cards .four {
+        height: 25rem;
+    }
 
-
-
-
-}*/
+    .container-activities-cards .container-small {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 45%;
+    }
+}
