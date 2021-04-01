@@ -21,23 +21,24 @@ time, mark, audio, video {
 body {
     font-family: raleway, Arial, Helvetica, sans-serif;
     font-size: 62.5%;
+    box-sizing: border-box;
 }
 h1, h2 {
     font-weight: bold;
-    font-size: 5.5em;
+    font-size: 1.5rem;
 }
 h3 {
     font-weight: bold;
-    font-size: 4em;
+    font-size: 1rem;
     margin-bottom: 2%;
 }
 li {
-    font-size: 3.5em;
+    font-size: 1rem;
     font-weight: normal;
     list-style: none;
 }
 p {
-    font-size: 3.5em;
+    font-size: 1rem;
     font-weight: normal;
     margin-bottom: 2%;
 }
@@ -47,7 +48,10 @@ a {
 }
 .fa-star {
     color: #0065FC;
-    font-size: 3em;
+    font-size: 0.8rem;
+}
+.card-text p {
+    font-size: 0.8rem;
 }
 /*header*/
 header {
@@ -61,7 +65,7 @@ header {
 }
 .subscribe a {
     font-weight: bold;
-    font-size: 4em;
+    font-size: 1rem;
     color: #0065FC;
 }
 .container-logo {
@@ -71,7 +75,7 @@ header {
     margin-bottom: 3%;
 }
 .logo img {
-    width: 200px;
+    width: 100px;
 }
 .container-nav ul {
     display: flex;
@@ -81,10 +85,10 @@ header {
     width : 50%;
     text-align: center;
     padding-bottom: 3%;
-    border-bottom: 5px solid #F2F2F2;
+    border-bottom: 3px solid #F2F2F2;
 }
 .container-nav li:nth-child(1) {
-    border-bottom: 5px solid #0065FC;
+    border-bottom: 3px solid #0065FC;
 }
 .container-nav li:nth-child(1) a {
     color: #0065FC;
@@ -106,54 +110,56 @@ form {
     margin-bottom: 8%;
 }
 input {
-    font-size: 4.5em;
+    font-size: 1.2rem;
     font-weight: bold;
     font-family: raleway, Arial, Helvetica, sans-serif;
-    height: 3em;
+    height: 3rem;
     padding: 0.8em;
-    border: solid 2px #F2F2F2;
-    border-radius: 0 40px 40px 0;
+    border-top: solid 2px #F2F2F2;
+    border-bottom: solid 2px #F2F2F2;
+    border-left: none;
+    border-right: none;
     width: 100%;
-    position: relative;
+
 }
 ::placeholder {
     color: black;
 }
 button {
-    font-size: 4.5em;
+    font-size: 1.2rem;
     background-color: #0065FC;
     border: none;
-    border-radius: 40px;
-    padding: 0.8em 1em;
-    height: 3em;;
+    border-radius: 15px;
+    padding: 0 1rem;
+    height: 3rem;
     cursor: pointer;
-    position: absolute;
-    right: 50px;
+    position: relative;
+    right: 20px;
 }
 button i {
     color: white;
 }
-.fa-map-marker-alt {
-    font-size: 4.5em;
+.container-search .i-container {
+    border-radius: 15px 0 0 15px;
     background-color: #F2F2F2;
-    padding: 1em 1em;
-    height: 3em;
-    border-radius: 40px 0 0 40px;
-    text-align: center;
-    box-sizing: border-box;
+    padding: 0.9rem;
+
+}
+.fa-map-marker-alt {
+    font-size: 1.2rem;
 }
 .filters {
     margin-bottom: 3%;
 }
 .filter-title {
     font-weight: bold;
-    font-size: 4em;
+    font-size: 1.2rem;
     margin-bottom: 2%;
 }
 .filter span {
-    font-size: 3.5em;
+    font-size: 1rem;
     font-weight: bold;
-    margin-left: 3em;
+    margin-left: 2.5rem;
 }
 .container-filters {
     display: flex;
@@ -167,40 +173,27 @@ button i {
     display: flex;
     justify-content: flex-start;
     align-items: center;  
-    border: solid 5px #F2F2F2;
-    border-radius: 8em;
-    height: 8em;
+    border: solid 3px #F2F2F2;
+    border-radius: 8rem;
     position: relative;
-    padding-right: 2.5em;
+    padding: 0.7rem 1rem;
 }
-/* .filter {
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    margin: 1% 1% 1% 0;
-    border: solid 5px #F2F2F2;
-    border-radius: 8em;
-    height: 8em;
-    max-width: 60%;
-    position: relative;
-    padding-right: 2.5em;
-} */
+
 .filter i {
     color: #0065FC;
-    font-size: 3em;
+    font-size: 1rem;
+}
+.filter .i-container {
     background-color: #DEEBFF;
     border-radius: 50%;
-    height: 3em;
-    width: 3em;
-    line-height: 3em;
+    padding: 1rem;
     position: absolute;
-    left:-5px;   
-    text-align: center;
+    left: -3px;
 }
 .info i {
-    font-size: 2em;
+    font-size: 0.6rem;
     color: #0065FC;
-    border: #F2F2F2 solid 3px;
+    border: #F2F2F2 solid 1px;
     border-radius: 50%;
     height: 2em;
     width: 2em;
@@ -227,20 +220,20 @@ button i {
     padding: 5% 5% 0 5%;
 }
 .popular-title i {
-    font-size: 5.5em;
+    font-size: 1.5rem;
 }
 .container-popular-cards .card {
     display: flex;
-    border-radius: 30px;
-    height: 350px;
+    border-radius: 20px;
+    height: 8rem;
     background-color: white;
     margin-bottom: 4%;
-    box-shadow:10px 10px 20px #6b6b6b41;
-    padding: 10px;
+    box-shadow:3px 3px 3px #6b6b6b41;
+    padding: 0.3rem;
 }
 .container-popular-cards .card .card-img {
     min-width: 40%;
-    border-radius: 30px 0 0 30px;
+    border-radius: 15px 0 0 15px;
 }
 .container-popular-cards a {
     display: block;
@@ -250,7 +243,7 @@ button i {
     flex-direction: column;
     justify-content: space-between;
     background-color: white;
-    border-radius: 0px 30px 30px 0;
+    border-radius: 0px 15px 15px 0;
     text-align: left;
     padding: 5%;
 }
@@ -278,7 +271,7 @@ button i {
     padding: 5% 5% 5% 5%;
 }
 #lodging .show {
-    font-size: 4em;
+    font-size: 1rem;
     font-weight: bold;
 }
 .container-lodging-cards {
@@ -286,19 +279,19 @@ button i {
 }
 .container-lodging-cards .card  {
     display: block;
-    border-radius: 30px;
-    height: 500px;
+    border-radius: 20px;
+    height: 12rem;
     background-color: white;
     margin-bottom: 4%;
-    box-shadow:10px 10px 20px #6b6b6b41;
-    padding: 10px;
+    box-shadow: 3px 3px 3px #6b6b6b41;
+    padding: 0.3rem;
 }
 .container-lodging-cards .card-text {
     background-color: white;
-    border-radius: 0px 30px 30px 0;
+    border-radius: 0px 15px 15px 0;
     text-align: left;
     padding-left: 3%;
-    padding-top: 2%;
+    padding-top: 3%;
 }
 .container-lodging-cards .card.one .card-text i:nth-last-child(1) {
     color: #F2F2F2;
@@ -314,7 +307,7 @@ button i {
 }
 .container-lodging-cards .card .card-img {
     min-height: 60%;
-    border-radius: 30px 30px 0px 0px;
+    border-radius: 15px 15px 0px 0px;
 }
 .container-lodging-cards .one .card-img {
     background: url("./images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg");
@@ -342,7 +335,7 @@ button i {
 }
 /*activities*/
 #activities .show {
-    font-size: 4em;
+    font-size: 1rem;
     font-weight: bold;
 }
 #activities {
@@ -353,22 +346,22 @@ button i {
 }
 .container-activities-cards .card  {
     display: block;
-    border-radius: 30px;
-    height: 500px;
+    border-radius: 20px;
+    height: 12rem;
     background-color: white;
     margin-bottom: 4%;
-    box-shadow:10px 10px 20px #6b6b6b41;
+    box-shadow: 3px 3px 3px #6b6b6b41;
 
 }
 .container-activities-cards .card-text {
     background-color: white;
-    border-radius: 0px 30px 30px 0;
+    border-radius: 0px 15px 15px 0;
     padding-left: 3%;
     padding-top: 6%;
 }
 .container-activities-cards .card .card-img {
     min-height: 70%;
-    border-radius: 30px 30px 0px 0px;
+    border-radius: 15px 15px 0px 0px;
 }
 .container-activities-cards .one .card-img {
     background: url("./images/activites/3_medium/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg");
