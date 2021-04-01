@@ -403,8 +403,7 @@ footer li {
 }
 
 @media only screen and (min-width: 768px)
-{
-
+{   
     .container-lodging-cards
     {
         display: flex;
@@ -435,5 +434,9 @@ footer li {
         flex-direction: column;
         justify-content: space-between;
         width: 45%;
+    }
+    footer {
+        display: flex;
+        justify-content: space-between;
     }
 }
