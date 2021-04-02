@@ -85,10 +85,10 @@ header {
     width : 50%;
     text-align: center;
     padding-bottom: 3%;
-    border-bottom: 3px solid #F2F2F2;
+    border-bottom: 2px solid #F2F2F2;
 }
 .container-nav li:nth-child(1) {
-    border-bottom: 3px solid #0065FC;
+    border-bottom: 2px solid #0065FC;
 }
 .container-nav li:nth-child(1) a {
     color: #0065FC;
@@ -127,9 +127,7 @@ input:focus {
     background-color: #deebff49;
     
 }
-::placeholder {
-    color: black;
-}
+
 button {
     font-size: 1.2rem;
     background-color: #0065FC;
@@ -261,14 +259,17 @@ button i {
 .container-popular-cards .card.one .card-img {
     background: url("./images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg");
     background-position: center;
+    background-size: cover;
 }
 .container-popular-cards .card.two .card-img {
     background: url("./images/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg");
     background-position: center;
+    background-size: cover;
 }
 .container-popular-cards .card.three .card-img {
     background: url("./images/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg");
     background-position: center;
+    background-size: cover;
 }
 
 /*lodging*/
@@ -316,26 +317,32 @@ button i {
 .container-lodging-cards .one .card-img {
     background: url("./images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg");
     background-position: center;
+    background-size: cover;
 }
 .container-lodging-cards .two .card-img {
     background: url("./images/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg");
     background-position: center;
+    background-size: cover;
 }
 .container-lodging-cards .three .card-img {
     background: url("./images/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg");
     background-position: center;
+    background-size: cover;
 }
 .container-lodging-cards .four .card-img {
     background: url("./images/hebergements/3_medium/annie-spratt-Eg1qcIitAuA-unsplash.jpg");
     background-position: center;
+    background-size: cover;
 }
 .container-lodging-cards .five .card-img {
     background: url("./images/hebergements/3_medium/nicate-lee-kT-ZyaiwBe0-unsplash.jpg");
     background-position: center;
+    background-size: cover;
 }
 .container-lodging-cards .six .card-img {
     background: url("./images/hebergements/3_medium/febrian-zakaria-M6S1WvfW68A-unsplash.jpg");
     background-position: center;
+    background-size: cover;
 }
 /*activities*/
 #activities .show {
@@ -370,6 +377,7 @@ button i {
 .container-activities-cards .one .card-img {
     background: url("./images/activites/3_medium/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg");
     background-position: center;
+    background-size: cover;
 }
 .container-activities-cards .two-small .card-img {
     background: url("./images/activites/3_medium/paul-hermann-QFTrLdQIRhI-unsplash.jpg");
@@ -379,18 +387,22 @@ button i {
 .container-activities-cards .three-small .card-img {
     background: url("./images/activites/3_medium/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg");
     background-position: center;
+    background-size: cover;
 }
 .container-activities-cards .four .card-img {
     background: url("./images/activites/3_medium/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg");
     background-position: center;
+    background-size: cover;
 }
 .container-activities-cards .five-small .card-img {
     background: url("./images/activites/3_medium/florian-wehde-xW9e8gdotxI-unsplash.jpg");
     background-position: center;
+    background-size: cover;
 }
 .container-activities-cards .six-small .card-img {
     background: url("./images/activites/3_medium/lena-paulin-wH2-EJoDcV0-unsplash.jpg");
     background-position: center;
+    background-size: cover;
 }
 /*footer*/
 footer {
@@ -444,4 +456,57 @@ footer li {
         display: flex;
         justify-content: space-between;
     }
+}
+
+@media only screen and (min-width: 1025px)
+{
+    .only-mobile {
+        display: none;
+    }
+    .only-desktop {
+        display: block;
+        margin-left: 2rem;
+        padding: 2rem ;
+        
+    }
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-left: 5%;
+        margin-right: 5%;
+
+    }
+    .container-logo {
+        display: block;
+        margin-bottom: 0;
+        padding: 0;
+    }
+    
+    .container-nav {
+        display: flex;
+        justify-content: space-between;
+     
+    }
+    .container-nav li {
+        width : auto;
+        border-bottom: none;
+        padding: 2rem ;
+        border-top: 2px solid transparent;
+
+    }
+    .container-nav li:hover {
+        border-top: 2px solid #0065FC;
+    }
+    .container-nav li a {
+        padding: 2rem ;
+    }
+    .container-nav li a:hover {
+        color: #0065FC;
+    }
+    .container-nav li:nth-child(1) {
+        border-bottom: none;
+        border-top: 2px solid #0065FC;
+    }
+
 }
