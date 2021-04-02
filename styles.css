@@ -128,7 +128,7 @@ input:focus {
     
 }
 
-button {
+.only-mobile-button {
     font-size: 1.2rem;
     background-color: #0065FC;
     border: none;
@@ -139,8 +139,11 @@ button {
     position: relative;
     right: 20px;
 }
-button i {
+.only-mobile-button i {
     color: white;
+}
+.only-tablet-desktop-button {
+    display: none;
 }
 .container-search .i-container {
     border-radius: 15px 0 0 15px;
@@ -249,6 +252,9 @@ button i {
     border-radius: 0px 15px 15px 0;
     text-align: left;
     padding: 1rem;
+}
+.card-text span {
+    font-weight: bold;
 }
 .container-popular-cards .two .card-text i:nth-last-child(1) {
     color: #F2F2F2;
@@ -421,6 +427,27 @@ footer li {
 
 @media only screen and (min-width: 768px)
 {   
+    .only-mobile-button {
+        display: none;
+    }
+    .only-tablet-desktop-button {
+        display: inline;
+        font-size: 1.2rem;
+        font-weight: normal;
+        color: white;
+        background-color: #0065FC;
+        border: none;
+        border-radius: 0 15px 15px 0;
+        padding: 0 1rem;
+        height: 3rem;
+        cursor: pointer;
+        position: relative;
+        right: 20px;
+    }
+    form {
+        max-width: 700px;
+    }
+
     .container-lodging-cards
     {
         display: flex;
@@ -439,7 +466,7 @@ footer li {
 
     }
     .container-activities-cards .card {
-        min-width: 45%;
+        min-width: 48%;
         
     }
     .container-activities-cards .one, .container-activities-cards .four {
@@ -450,7 +477,7 @@ footer li {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        width: 45%;
+        width: 48%;
     }
     footer {
         display: flex;
@@ -508,5 +535,44 @@ footer li {
         border-bottom: none;
         border-top: 2px solid #0065FC;
     }
+    .filter {
+        margin-right: 2rem;
+    }
+    .filter.money {
+        margin-left: 2rem;
+    }
+   .filters {
+        display: flex;
+        justify-content: flex-start;
+        align-items: baseline;
+        flex-wrap: nowrap;
+    }
+    }
+    .flex-container {
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+    }
+    #lodging {
+        background-color: #F2F2F2;
+        margin: 3rem;
+        border-radius: 1rem;;
+    }
+    .container-activities-cards {
+        display: flex;
+        flex-grow: 1;
+        justify-content: space-between;
+        flex-wrap: nowrap;
+        align-items: flex-start;
 
+    }
+    .container-activities-cards .card.one, .container-activities-cards .card.four  {
+        min-width: 20rem;
+    }
+    .container-activities-cards .container-small {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        max-width: 20rem;
+    }
 }
