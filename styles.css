@@ -122,6 +122,11 @@ input {
     width: 100%;
 
 }
+input:focus {
+    outline: none;
+    background-color: #deebff49;
+    
+}
 ::placeholder {
     color: black;
 }
