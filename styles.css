@@ -591,12 +591,26 @@ footer li {
     }
     .container-lodging-cards .card {
         min-width: 30%;
+        margin-bottom: 3rem;
+    }
+    .container-lodging-cards {
+        margin: 3rem 0 0 0;
     }
     .popular {
         border-radius: 1rem;
         margin-left: 3rem;
         padding: 3rem;
         flex: 1;
+    }
+    .popular .popular-title {
+        padding:0;
+    }
+    .container-popular-cards {
+        padding:0;
+        margin-top: 3rem;
+    }
+    .container-popular-cards .card.three {
+        margin-bottom: 0;
     }
     #activities {
         padding: 3rem;
