@@ -587,12 +587,13 @@ footer li {
         margin: 0;
         flex: 2;
     }
+    .container-lodging-cards {
+        margin: 3rem 0 0 0;
+
+    }
     .container-lodging-cards .card {
         min-width: 30%;
         margin-bottom: 3rem;
-    }
-    .container-lodging-cards {
-        margin: 3rem 0 0 0;
     }
     .popular {
         border-radius: 1rem;
@@ -606,6 +607,9 @@ footer li {
     .container-popular-cards {
         padding:0;
         margin-top: 3rem;
+    }
+    .container-popular-cards .card {
+        margin-bottom: 3rem;
     }
     .container-popular-cards .card.three {
         margin-bottom: 0;
