@@ -120,14 +120,11 @@ input {
     border-left: none;
     border-right: none;
     width: 100%;
-
 }
 input:focus {
     outline: none;
-    background-color: #deebff49;
-    
+    background-color: #deebff49;   
 }
-
 .only-mobile-button {
     font-size: 1.2rem;
     background-color: #0065FC;
@@ -149,7 +146,6 @@ input:focus {
     border-radius: 15px 0 0 15px;
     background-color: #F2F2F2;
     padding: 0.9rem;
-
 }
 .fa-map-marker-alt {
     font-size: 1.2rem;
@@ -186,7 +182,6 @@ input:focus {
     position: relative;
     padding: 0.7rem 1rem;
 }
-
 .filter i {
     color: #0065FC;
     font-size: 1rem;
@@ -366,7 +361,6 @@ input:focus {
     background-color: white;
     margin-bottom: 4%;
     box-shadow: 3px 3px 3px #6b6b6b41;
-
 }
 .container-activities-cards .card-text {
     background-color: white;
@@ -445,7 +439,6 @@ footer li {
     form {
         max-width: 700px;
     }
-
     .container-lodging-cards
     {
         display: flex;
@@ -456,27 +449,24 @@ footer li {
     .container-lodging-cards .card {
         min-width: 45%;
     }
-
     .container-activities-cards {
         display: flex;
         justify-content: space-between;
         flex-wrap: wrap;
         margin-bottom: 0;
-
     }
     .container-activities-cards .card {
         min-width: 48%;
         margin-bottom: 0;
-        
     }
     .container-activities-cards .one, .container-activities-cards .four {
         height: 25rem;
         margin-bottom: 1rem;
     }
-    .container-activities-cards .one .card-img, .container-activities-cards .four .card-img {
+    .container-activities-cards .one .card-img,
+    .container-activities-cards .four .card-img {
         min-height: 85.5%;
     }
-
     .container-activities-cards .container-small {
         display: flex;
         flex-direction: column;
@@ -623,14 +613,14 @@ footer li {
     #activities {
         padding: 3rem;
     }
-
     .container-activities-cards {
         display: flex;
         justify-content: space-between;
         flex-wrap: nowrap;
         margin-top: 3rem;
     }
-    .container-activities-cards .card.one, .container-activities-cards .card.four  {
+    .container-activities-cards .card.one,
+    .container-activities-cards .card.four  {
         min-width: 25%;
         margin-right: 3rem;
         height: auto;
@@ -645,7 +635,8 @@ footer li {
     .container-activities-cards .container-small:nth-of-type(1) {
         margin-right: 3rem;
     }
-    .container-activities-cards .container-small .card.two-small, .container-activities-cards .container-small .card.five-small {
+    .container-activities-cards .container-small .card.two-small,
+    .container-activities-cards .container-small .card.five-small {
         margin-bottom: 3rem;
     }
     footer {
