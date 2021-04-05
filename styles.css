@@ -539,27 +539,28 @@ footer li {
         border-top: 2px solid #0065FC;
     }
     .search {
-        margin: 3rem;
+        margin: 0 3rem 3rem 3rem;
         padding: 0;
     }
     .search h1 {
         margin-bottom: 1rem;
     }
-    .search p {
-        margin-bottom: 3rem;;
-    }
     form {
-        margin-top: 0;
+        margin-top: 3rem;
         margin-bottom: 3rem;;
     }
     .container-filters {
         margin: 0;
     }
     .filters {
-        margin:0;
+        margin-bottom: 3rem;
+    }
+    .filter-title {
+        margin-bottom: 0;
     }
     .filter {
         margin-right: 2rem;
+        margin-bottom: 0;
     }
     .filter:hover {
         box-shadow:3px 3px 10px #6b6b6b28;
@@ -575,6 +576,7 @@ footer li {
     }
     .info p {
         margin-left: 1rem;
+        margin-bottom: 0;
     }
     .flex-container {
         display: flex;
