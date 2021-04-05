@@ -498,11 +498,14 @@ footer li {
     }
     .only-desktop {
         display: block;
-        margin-left: 2rem;
+    
         padding: 2rem 0 2rem 2rem ;
     }
+    .only-desktop a {
+        padding: 2rem 0 2rem 0;
+    }
     .only-desktop a:hover {
-        color: #0a6cff;
+        color: #0065fc8a;
     }
     header {
         display: flex;
@@ -563,7 +566,7 @@ footer li {
         margin-bottom: 0;
     }
     .filter:hover {
-        box-shadow:3px 3px 10px #6b6b6b28;
+        box-shadow:3px 3px 8px #8d8d8d1c;
     }
     .filter.money {
         margin-left: 2rem;
@@ -583,6 +586,9 @@ footer li {
         flex-direction: row-reverse;
         align-items: stretch;
         margin: 3rem;
+    }
+    .card:hover {
+        box-shadow:3px 3px 15px #6b6b6b41;
     }
     #lodging {
         background-color: #F2F2F2;
