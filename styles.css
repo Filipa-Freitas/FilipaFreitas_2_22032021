@@ -461,16 +461,20 @@ footer li {
         display: flex;
         justify-content: space-between;
         flex-wrap: wrap;
-        align-items: flex-start;
         margin-bottom: 0;
 
     }
     .container-activities-cards .card {
         min-width: 48%;
+        margin-bottom: 0;
         
     }
     .container-activities-cards .one, .container-activities-cards .four {
         height: 25rem;
+        margin-bottom: 1rem;
+    }
+    .container-activities-cards .one .card-img, .container-activities-cards .four .card-img {
+        min-height: 85.5%;
     }
 
     .container-activities-cards .container-small {
@@ -479,6 +483,7 @@ footer li {
         justify-content: space-between;
         align-items: stretch;
         width: 48%;
+        margin-bottom: 1rem;
     }
     footer {
         display: flex;
@@ -494,7 +499,7 @@ footer li {
     .only-desktop {
         display: block;
         margin-left: 2rem;
-        padding: 2rem ;
+        padding: 2rem 0 2rem 2rem ;
     }
     .only-desktop a:hover {
         color: #0a6cff;
@@ -503,27 +508,22 @@ footer li {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        margin-left: 5%;
-        margin-right: 5%;
-
+        margin: 3rem;
     }
     .container-logo {
         display: block;
         margin-bottom: 0;
         padding: 0;
     }
-    
     .container-nav {
         display: flex;
         justify-content: space-between;
-     
     }
     .container-nav li {
         width : auto;
         border-bottom: none;
         padding: 2rem ;
         border-top: 2px solid transparent;
-
     }
     .container-nav li:hover {
         border-top: 2px solid #0065FC;
@@ -538,13 +538,32 @@ footer li {
         border-bottom: none;
         border-top: 2px solid #0065FC;
     }
+    .search {
+        margin: 3rem;
+        padding: 0;
+    }
+    .search h1 {
+        margin-bottom: 1rem;
+    }
+    .search p {
+        margin-bottom: 3rem;;
+    }
+    form {
+        margin-top: 0;
+        margin-bottom: 3rem;;
+    }
+    .container-filters {
+        margin: 0;
+    }
+    .filters {
+        margin:0;
+    }
     .filter {
         margin-right: 2rem;
     }
     .filter:hover {
         box-shadow:3px 3px 10px #6b6b6b28;
     }
-
     .filter.money {
         margin-left: 2rem;
     }
@@ -554,32 +573,63 @@ footer li {
         align-items: baseline;
         flex-wrap: nowrap;
     }
-    
+    .info p {
+        margin-left: 1rem;
+    }
     .flex-container {
         display: flex;
         flex-direction: row-reverse;
         align-items: stretch;
+        margin: 3rem;
     }
     #lodging {
         background-color: #F2F2F2;
-        margin: 3rem;
-        border-radius: 1rem;;
+        border-radius: 1rem;
+        padding: 3rem;
+        margin: 0;
+        flex: 2;
     }
+    .container-lodging-cards .card {
+        min-width: 30%;
+    }
+    .popular {
+        border-radius: 1rem;
+        margin-left: 3rem;
+        padding: 3rem;
+        flex: 1;
+    }
+    #activities {
+        padding: 3rem;
+    }
+
     .container-activities-cards {
         display: flex;
-        flex-grow: 1;
         justify-content: space-between;
         flex-wrap: nowrap;
-        align-items: flex-start;
-
+        margin-top: 3rem;
     }
     .container-activities-cards .card.one, .container-activities-cards .card.four  {
-        min-width: 20rem;
+        min-width: 25%;
+        margin-right: 3rem;
+        height: auto;
+        
     }
     .container-activities-cards .container-small {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        max-width: 20rem;
+        max-width: 25%;
+    }
+    .container-activities-cards .container-small:nth-of-type(1) {
+        margin-right: 3rem;
+    }
+    .container-activities-cards .container-small .card.two-small, .container-activities-cards .container-small .card.five-small {
+        margin-bottom: 3rem;
+    }
+    footer {
+        padding: 3rem;
+    }
+    footer div {
+        margin: 0
     }
 }
