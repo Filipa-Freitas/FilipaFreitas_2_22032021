@@ -228,7 +228,7 @@ input:focus {
 .container-popular-cards .card {
     display: flex;
     border-radius: 20px;
-    height: 8rem;
+    min-height: 8rem;
     background-color: white;
     margin-bottom: 4%;
     box-shadow:3px 3px 3px #6b6b6b41;
@@ -297,7 +297,7 @@ input:focus {
 }
 .container-lodging-cards .card-text {
     background-color: white;
-    border-radius: 0px 15px 15px 0;
+    border-radius: 0px 0 15px 15px;
     text-align: left;
     padding: 0.5rem;
 }
@@ -364,7 +364,7 @@ input:focus {
 }
 .container-activities-cards .card-text {
     background-color: white;
-    border-radius: 0px 15px 15px 0;
+    border-radius: 0px 0 15px 15px;
     padding-left: 0.5rem;
     padding-top: 1rem;
 }
@@ -459,7 +459,8 @@ footer li {
         min-width: 48%;
         margin-bottom: 0;
     }
-    .container-activities-cards .one, .container-activities-cards .four {
+    .container-activities-cards .one,
+    .container-activities-cards .four {
         height: 25rem;
         margin-bottom: 1rem;
     }
