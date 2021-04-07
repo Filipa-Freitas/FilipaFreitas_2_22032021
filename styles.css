@@ -549,12 +549,14 @@ footer li {
         border-bottom: none;
         padding: 2rem ;
         border-top: 2px solid transparent;
+        transition-duration: 300ms;
     }
     .container-nav li:hover {
         border-top: 2px solid #0065FC;
     }
     .container-nav li a {
         padding: 2rem ;
+        transition-duration: 300ms;
     }
     .container-nav li:nth-child(1) a {
         color:black;
@@ -611,8 +613,12 @@ footer li {
         align-items: stretch;
         margin: 3rem;
     }
+    .card {
+        transition-duration: 300ms;
+    }
     .card:hover {
-        box-shadow:3px 3px 15px #6b6b6b41;
+        box-shadow:3px 3px 15px #6b6b6b86;
+        
     }
     #lodging {
         background-color: #F2F2F2;
