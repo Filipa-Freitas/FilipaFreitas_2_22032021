@@ -382,7 +382,7 @@ footer li {
         right: 20px;
     }
     form {
-        max-width: 700px;
+        max-width: 500px;
     }
     .container-lodging-cards {
         display: flex;
@@ -468,14 +468,14 @@ footer li {
         border-bottom: none;
         padding: 2rem ;
         border-top: 2px solid transparent;
-        transition: 250ms;
+        transition: 200ms;
     }
     .container-nav li:hover {
         border-top: 2px solid #0065FC;
     }
     .container-nav li a {
         padding: 2rem ;
-        transition: 250ms;
+        transition: 200ms;
     }
     .container-nav li:nth-child(1) a {
         color:black;
@@ -506,13 +506,13 @@ footer li {
     .filter {
         margin-right: 2rem;
         margin-bottom: 0;
-        transition: 250ms ease-in-out;
+        transition: 200ms ease-in;
     }
     .filters {
         margin-bottom: 3rem;
     }
     .filter:hover {
-        box-shadow: 2px 2px 5px #6b6b6b50;
+        box-shadow: 2px 2px 5px #6b6b6b2a;
     }
     .filter.money {
         margin-left: 2rem;
@@ -534,7 +534,7 @@ footer li {
         margin: 3rem;
     }
     .card {
-        transition: 250ms ease-in-out;
+        transition: 200ms ease-in-out;
     }
     .card:hover {
         box-shadow: 3px 3px 15px #6b6b6b86;
