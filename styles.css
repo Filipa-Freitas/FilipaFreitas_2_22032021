@@ -79,7 +79,6 @@ header {
 }
 .container-nav ul {
     display: flex;
-    padding: 0;
 }
 .container-nav li {
     width : 50%;
@@ -231,7 +230,7 @@ input:focus {
     height: 8rem;
     background-color: white;
     margin-bottom: 4%;
-    box-shadow:3px 3px 3px #6b6b6b41;
+    box-shadow: 3px 3px 3px #6b6b6b41;
     padding: 0.3rem;
 }
 .container-popular-cards .card .card-img {
@@ -267,22 +266,6 @@ input:focus {
 .container-popular-cards .three .card-text i:nth-last-child(1) {
     color: #F2F2F2;
 }
-/* .container-popular-cards .card.one .card-img {
-    background: url("./images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg");
-    background-position: center;
-    background-size: cover;
-}
-.container-popular-cards .card.two .card-img {
-    background: url("./images/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg");
-    background-position: center;
-    background-size: cover;
-}
-.container-popular-cards .card.three .card-img {
-    background: url("./images/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg");
-    background-position: center;
-    background-size: cover;
-} */
-
 /*lodging*/
 #lodging {
     padding: 5% 5% 5% 5%;
@@ -294,7 +277,7 @@ input:focus {
 .container-lodging-cards {
     margin: 5% 0 5% 0;
 }
-.container-lodging-cards .card  {
+.container-lodging-cards .card {
     display: block;
     border-radius: 20px;
     height: 12rem;
@@ -333,36 +316,6 @@ input:focus {
 .container-lodging-cards .card.five .card-text i:nth-last-child(1) {
     color: #F2F2F2;
 }
-/* .container-lodging-cards .one .card-img {
-    background: url("./images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg");
-    background-position: center;
-    background-size: cover;
-}
-.container-lodging-cards .two .card-img {
-    background: url("./images/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg");
-    background-position: center;
-    background-size: cover;
-}
-.container-lodging-cards .three .card-img {
-    background: url("./images/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg");
-    background-position: center;
-    background-size: cover;
-}
-.container-lodging-cards .four .card-img {
-    background: url("./images/hebergements/3_medium/annie-spratt-Eg1qcIitAuA-unsplash.jpg");
-    background-position: center;
-    background-size: cover;
-}
-.container-lodging-cards .five .card-img {
-    background: url("./images/hebergements/3_medium/nicate-lee-kT-ZyaiwBe0-unsplash.jpg");
-    background-position: center;
-    background-size: cover;
-}
-.container-lodging-cards .six .card-img {
-    background: url("./images/hebergements/3_medium/febrian-zakaria-M6S1WvfW68A-unsplash.jpg");
-    background-position: center;
-    background-size: cover;
-} */
 /*activities*/
 #activities {
     padding: 5% 5% 5% 5%;
@@ -370,7 +323,7 @@ input:focus {
 .container-activities-cards {
     margin: 5% 0 5% 0;
 }
-.container-activities-cards .card  {
+.container-activities-cards .card {
     display: block;
     border-radius: 20px;
     height: 12rem;
@@ -396,36 +349,6 @@ input:focus {
     object-fit: cover;
     object-position: center;
 }
-/* .container-activities-cards .one .card-img {
-    background: url("./images/activites/3_medium/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg");
-    background-position: center;
-    background-size: cover;
-}
-.container-activities-cards .two-small .card-img {
-    background: url("./images/activites/3_medium/paul-hermann-QFTrLdQIRhI-unsplash.jpg");
-    background-position:center;
-    background-size: cover;
-}
-.container-activities-cards .three-small .card-img {
-    background: url("./images/activites/3_medium/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg");
-    background-position: center;
-    background-size: cover;
-}
-.container-activities-cards .four .card-img {
-    background: url("./images/activites/3_medium/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg");
-    background-position: center;
-    background-size: cover;
-}
-.container-activities-cards .five-small .card-img {
-    background: url("./images/activites/3_medium/florian-wehde-xW9e8gdotxI-unsplash.jpg");
-    background-position: center;
-    background-size: cover;
-}
-.container-activities-cards .six-small .card-img {
-    background: url("./images/activites/3_medium/lena-paulin-wH2-EJoDcV0-unsplash.jpg");
-    background-position: center;
-    background-size: cover;
-} */
 /*footer*/
 footer {
     background: #F2F2F2;
@@ -441,8 +364,7 @@ footer li {
     margin-bottom: 3%;
 }
 
-@media only screen and (min-width: 768px)
-{   
+@media only screen and (min-width: 768px) {   
     .only-mobile-button {
         display: none;
     }
@@ -463,8 +385,7 @@ footer li {
     form {
         max-width: 700px;
     }
-    .container-lodging-cards
-    {
+    .container-lodging-cards {
         display: flex;
         justify-content: space-between;
         flex-wrap: wrap;
@@ -513,14 +434,12 @@ footer li {
     }
 }
 
-@media only screen and (min-width: 1025px)
-{
+@media only screen and (min-width: 1025px) {
     .only-mobile {
         display: none;
     }
     .only-desktop {
-        display: block;
-    
+        display: block;   
         padding: 2rem 0 2rem 2rem ;
     }
     .only-desktop a {
@@ -592,7 +511,7 @@ footer li {
         margin-bottom: 0;
     }
     .filter:hover {
-        box-shadow:3px 3px 8px #8d8d8d1c;
+        box-shadow: 3px 3px 8px #8d8d8d1c;
     }
     .filter.money {
         margin-left: 2rem;
@@ -617,7 +536,7 @@ footer li {
         transition-duration: 300ms;
     }
     .card:hover {
-        box-shadow:3px 3px 15px #6b6b6b86;
+        box-shadow: 3px 3px 15px #6b6b6b86;
         
     }
     #lodging {
@@ -642,10 +561,10 @@ footer li {
         flex: 1;
     }
     .popular .popular-title {
-        padding:0;
+        padding: 0;
     }
     .container-popular-cards {
-        padding:0;
+        padding: 0;
         margin-top: 3rem;
     }
     .container-popular-cards .card {
@@ -668,7 +587,6 @@ footer li {
         min-width: 25%;
         margin-right: 3rem;
         height: auto;
-        
     }
     .container-activities-cards .container-small {
         display: flex;
