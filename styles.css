@@ -57,10 +57,10 @@ a {
 header {
     margin: 5% 0 5% 0;
 }
-.container-logo {
+header .container-logo {
     padding : 0 5% 0 5%;
 }
-.only-desktop {
+header .only-desktop {
     display: none;
 }
 .subscribe a {
@@ -68,28 +68,28 @@ header {
     font-size: 1rem;
     color: #0065FC;
 }
-.container-logo {
+header .container-logo {
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin-bottom: 3%;
 }
-.logo img {
+header .logo img {
     width: 100px;
 }
-.container-nav ul {
+header .container-nav ul {
     display: flex;
 }
-.container-nav li {
+header .container-nav li {
     width : 50%;
     text-align: center;
     padding-bottom: 3%;
     border-bottom: 2px solid #F2F2F2;
 }
-.container-nav li:nth-child(1) {
+header .container-nav .li-lodging {
     border-bottom: 2px solid #0065FC;
 }
-.container-nav li:nth-child(1) a {
+header .container-nav .li-lodging a {
     color: #0065FC;
 }
 /*search section*/
@@ -100,7 +100,7 @@ header {
 h1 {
     margin-bottom: 2%;
 }
-form {
+.search form {
     width: 100%;
     display: flex;
     justify-content: center;
@@ -108,7 +108,7 @@ form {
     margin-top: 8%;
     margin-bottom: 8%;
 }
-input {
+.search input {
     font-size: 1.2rem;
     font-weight: bold;
     font-family: raleway, Arial, Helvetica, sans-serif;
@@ -120,10 +120,13 @@ input {
     border-right: none;
     width: 100%;
 }
+input[type="search"]::-webkit-search-cancel-button {
+    display: none;
+  }
 input:focus {
     outline: none;  
 }
-.only-mobile-button {
+.search .only-mobile-button {
     font-size: 1.2rem;
     background-color: #0065FC;
     border: none;
@@ -134,10 +137,10 @@ input:focus {
     position: relative;
     right: 20px;
 }
-.only-mobile-button i {
+.search .only-mobile-button i {
     color: white;
 }
-.only-tablet-desktop-button {
+.search .only-tablet-desktop-button {
     display: none;
 }
 .container-search .i-container {
@@ -145,7 +148,7 @@ input:focus {
     background-color: #F2F2F2;
     padding: 0.9rem;
 }
-.fa-map-marker-alt {
+.search .fa-map-marker-alt {
     font-size: 1.2rem;
 }
 .filters {
@@ -191,7 +194,7 @@ input:focus {
     position: absolute;
     left: -3px;
 }
-.info i {
+.search .info i {
     font-size: 0.6rem;
     color: #0065FC;
     border: #F2F2F2 solid 1px;
@@ -201,10 +204,10 @@ input:focus {
     line-height: 2em;
     text-align: center;
 }
-.info {
+.search .info {
     display: flex;
 }
-.info p {
+.search .info p {
     margin-left: 2.5%;
 }
 /*popular section*/
@@ -251,7 +254,6 @@ input:focus {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    background-color: white;
     border-radius: 0px 15px 15px 0;
     text-align: left;
     padding: 1rem;
@@ -298,7 +300,6 @@ input:focus {
     object-position: center;
 }
 .container-lodging-cards .card-text {
-    background-color: white;
     border-radius: 0px 0 15px 15px;
     text-align: left;
     padding: 0.5rem;
@@ -331,7 +332,6 @@ input:focus {
     box-shadow: 3px 3px 3px #6b6b6b41;
 }
 .container-activities-cards .card-text {
-    background-color: white;
     border-radius: 0px 0 15px 15px;
     padding-left: 0.5rem;
     padding-top: 1rem;
@@ -364,10 +364,10 @@ footer li {
 }
 
 @media only screen and (min-width: 768px) {   
-    .only-mobile-button {
+    .search .only-mobile-button {
         display: none;
     }
-    .only-tablet-desktop-button {
+    .search .only-tablet-desktop-button {
         display: inline;
         font-size: 1.2rem;
         font-weight: normal;
@@ -381,7 +381,7 @@ footer li {
         position: relative;
         right: 20px;
     }
-    form {
+    .search form {
         max-width: 500px;
     }
     .container-lodging-cards {
@@ -434,18 +434,18 @@ footer li {
 }
 
 @media only screen and (min-width: 1025px) {
-    .only-mobile {
+    header .only-mobile {
         display: none;
     }
-    .only-desktop {
+    header .only-desktop {
         display: block;   
         padding: 2rem 0 2rem 2rem ;
     }
-    .only-desktop a {
+    header .only-desktop a {
         padding: 2rem 0 2rem 0;
         transition-duration: 250ms;
     }
-    .only-desktop a:hover {
+    header .only-desktop a:hover {
         color: #0065fc8a;
     }
     header {
@@ -454,37 +454,35 @@ footer li {
         align-items: center;
         margin: 3rem;
     }
-    .container-logo {
+    header .container-logo {
         display: block;
         margin-bottom: 0;
         padding: 0;
     }
-    .container-nav {
+    header .container-nav {
         display: flex;
         justify-content: space-between;
     }
-    .container-nav li {
+    header .container-nav li {
         width : auto;
         border-bottom: none;
         padding: 2rem ;
         border-top: 2px solid transparent;
         transition: 200ms;
     }
-    .container-nav li:hover {
+    header .container-nav li:hover {
         border-top: 2px solid #0065FC;
     }
-    .container-nav li a {
+    header .container-nav li a {
         padding: 2rem ;
         transition: 200ms;
     }
-    .container-nav li:nth-child(1) a {
-        color:black;
-    }
-    .container-nav li a:hover {
+    header .container-nav li a:hover {
         color: #0065FC;
     }
-    .container-nav li:nth-child(1) {
+    header .container-nav .li-lodging {
         border-bottom: none;
+        border-top: 2px solid #0065FC;
     }
     .search {
         margin: 0 3rem 3rem 3rem;
@@ -493,7 +491,7 @@ footer li {
     .search h1 {
         margin-bottom: 1rem;
     }
-    form {
+    header form {
         margin-top: 3rem;
         margin-bottom: 3rem;;
     }
@@ -547,6 +545,12 @@ footer li {
         margin: 0;
         flex: 2;
     }
+    #lodging .show {
+        transition-duration: 250ms;
+    }
+    #lodging .show:hover {
+        color: rgb(102, 102, 102);
+    }
     .container-lodging-cards {
         margin: 3rem 0 0 0;
 
@@ -554,6 +558,10 @@ footer li {
     .container-lodging-cards .card {
         width: 30%;
         margin-bottom: 3rem;
+        height: 15rem;
+    }
+    .container-lodging-cards .card .card-text h3 {
+        min-height: 2.5rem;
     }
     .popular {
         border-radius: 1rem;
@@ -570,6 +578,7 @@ footer li {
     }
     .container-popular-cards .card {
         margin-bottom: 3rem;
+        height: 10rem;
     }
     .container-popular-cards .card.three {
         margin-bottom: 0;
