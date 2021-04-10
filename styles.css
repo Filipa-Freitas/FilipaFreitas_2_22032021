@@ -107,6 +107,11 @@ h1 {
     align-items: center;
     margin-top: 8%;
     margin-bottom: 8%;
+    position: relative;
+}
+.search label {
+    visibility: hidden;
+    position: absolute;
 }
 .search input {
     font-size: 1.2rem;
@@ -120,6 +125,7 @@ h1 {
     border-right: none;
     width: 100%;
 }
+
 input[type="search"]::-webkit-search-cancel-button {
     display: none;
   }
@@ -509,6 +515,12 @@ footer li {
     .filters {
         margin-bottom: 3rem;
     }
+    .filter-icon {
+        transition: 200ms ease-in;
+    }
+    .filter:hover .filter-icon {
+        color: #0065fc8a;
+    }
     .filter:hover {
         box-shadow: 2px 2px 5px #6b6b6b2a;
     }
@@ -616,5 +628,11 @@ footer li {
     }
     footer div {
         margin: 0
+    }
+    footer a {
+        transition-duration: 250ms;
+    }
+    footer a:hover {
+        color: rgb(102, 102, 102);
     }
 }
