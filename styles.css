@@ -78,6 +78,7 @@ header .container-logo {
 }
 header .logo img {
     width: 100px;
+    height: auto;
 }
 header .container-nav ul {
     display: flex;
@@ -116,7 +117,7 @@ h1 {
     position: absolute;
 }
 .search input {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     font-weight: bold;
     font-family: raleway, Arial, Helvetica, sans-serif;
     height: 3rem;
@@ -127,7 +128,6 @@ h1 {
     border-right: none;
     width: 100%;
 }
-
 input[type="search"]::-webkit-search-cancel-button {
     visibility: hidden;
 }
@@ -138,6 +138,7 @@ input:focus {
 .search .only-mobile-button .visiually-hidden {
     visibility: hidden;
     position: absolute;
+    right: 2px;
 }
 .search .only-mobile-button {
     font-size: 1.2rem;
@@ -148,7 +149,7 @@ input:focus {
     height: 3rem;
     cursor: pointer;
     position: relative;
-    right: 20px;
+    right: 11px;
 }
 .search .only-mobile-button i {
     color: white;
