@@ -238,7 +238,7 @@ input:focus {
     height: 8rem;
     background-color: white;
     margin-bottom: 4%;
-    box-shadow: 3px 3px 3px #6b6b6b41;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
     padding: 0.3rem;
 }
 .container-popular-cards .card .card-img {
@@ -290,7 +290,7 @@ input:focus {
     height: 12rem;
     background-color: white;
     margin-bottom: 4%;
-    box-shadow: 3px 3px 3px #6b6b6b41;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
     padding: 0.3rem;
 }
 .container-lodging-cards .card .card-img {
@@ -335,7 +335,7 @@ input:focus {
     height: 12rem;
     background-color: white;
     margin-bottom: 4%;
-    box-shadow: 3px 3px 3px #6b6b6b41;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
 }
 .container-activities-cards .card-text {
     border-radius: 0px 0 15px 15px;
@@ -449,7 +449,7 @@ footer li {
     }
     header .only-desktop a {
         padding: 2rem 0 2rem 0;
-        transition-duration: 250ms;
+        transition: 0.3s cubic-bezier(.25,.8,.25,1);
     }
     header .only-desktop a:hover {
         color: #0065fc8a;
@@ -474,14 +474,14 @@ footer li {
         border-bottom: none;
         padding: 2rem ;
         border-top: 2px solid transparent;
-        transition: 200ms;
+        transition: 0.3s cubic-bezier(.25,.8,.25,1);
     }
     header .container-nav li:hover {
         border-top: 2px solid #0065FC;
     }
     header .container-nav li a {
         padding: 2rem ;
-        transition: 200ms;
+        transition: 0.3s cubic-bezier(.25,.8,.25,1);
     }
     header .container-nav li a:hover {
         color: #0065FC;
@@ -507,22 +507,28 @@ footer li {
     .filter-title {
         margin-bottom: 0;
     }
-    .filter {
-        margin-right: 2rem;
-        margin-bottom: 0;
-        transition: 200ms ease-in;
-    }
     .filters {
         margin-bottom: 3rem;
     }
+    .filter .i-container {
+        transition: 0.3s cubic-bezier(.25,.8,.25,1);
+    }
+    .filter:hover .i-container {
+        background-color: #0065FC;
+    }
+    .filter {
+        margin-right: 2rem;
+        margin-bottom: 0;
+        transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+    }
     .filter-icon {
-        transition: 200ms ease-in;
+        transition: 0.3s cubic-bezier(.25,.8,.25,1);
     }
     .filter:hover .filter-icon {
-        color: #0065fc8a;
+        color: #ffffff;
     }
     .filter:hover {
-        box-shadow: 2px 2px 5px #6b6b6b2a;
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.164), 0 5px 5px rgba(0, 0, 0, 0.151);
     }
     .filter.money {
         margin-left: 2rem;
@@ -544,10 +550,10 @@ footer li {
         margin: 3rem;
     }
     .card {
-        transition: 200ms ease-in-out;
+        transition: all 0.3s cubic-bezier(.25,.8,.25,1);
     }
     .card:hover {
-        box-shadow: 3px 3px 15px #6b6b6b86;
+        box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
         
     }
     #lodging {
@@ -558,7 +564,7 @@ footer li {
         flex: 2;
     }
     #lodging .show {
-        transition-duration: 250ms;
+        transition: 0.3s cubic-bezier(.25,.8,.25,1);
     }
     #lodging .show:hover {
         color: rgb(102, 102, 102);
@@ -630,7 +636,7 @@ footer li {
         margin: 0
     }
     footer a {
-        transition-duration: 250ms;
+        transition: 0.3s cubic-bezier(.25,.8,.25,1);
     }
     footer a:hover {
         color: rgb(102, 102, 102);
