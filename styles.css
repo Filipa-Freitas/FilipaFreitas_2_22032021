@@ -220,6 +220,10 @@ input:focus {
 .search .info p {
     margin-left: 2.5%;
 }
+/* sections */
+.card-text strong {
+    font-weight: bold;
+}
 /*popular section*/
 .popular {
     background-color: #F2F2F2;
@@ -267,9 +271,6 @@ input:focus {
     border-radius: 0px 15px 15px 0;
     text-align: left;
     padding: 1rem;
-}
-.card-text span {
-    font-weight: bold;
 }
 .container-popular-cards .two .card-text i:nth-last-child(1) {
     color: #F2F2F2;
