@@ -19,7 +19,7 @@ time, mark, audio, video {
 	vertical-align: baseline;
 }
 body {
-    font-family: raleway, Arial, Helvetica, sans-serif;
+    font-family: Raleway, Arial, Helvetica, sans-serif;
     font-size: 62.5%;
     box-sizing: border-box;
 }
@@ -497,9 +497,9 @@ footer li {
     .search h1 {
         margin-bottom: 1rem;
     }
-    header form {
+    .search form {
         margin-top: 3rem;
-        margin-bottom: 3rem;;
+        margin-bottom: 3rem;
     }
     .container-filters {
         margin: 0;
@@ -553,8 +553,7 @@ footer li {
         transition: all 0.3s cubic-bezier(.25,.8,.25,1);
     }
     .card:hover {
-        box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
-        
+        box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);  
     }
     #lodging {
         background-color: #F2F2F2;
