@@ -35,8 +35,6 @@ Cloner le repository
 
 **Dernière version stable :** 1.0
 **Dernière version :** 1.0
-Liste des versions : [Cliquer pour afficher](https://github.com/your/project-name/tags)
-_(pour le lien mettez simplement l'URL de votre projets suivi de ``/tags``)_
 
 ## Auteurs
 
