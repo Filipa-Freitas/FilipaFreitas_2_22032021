@@ -621,10 +621,13 @@ footer li {
         min-height: auto;
     }
     .wrapper {
-        max-width: 1704px;
+        max-width: 1700px;
         margin: auto;
     }
     footer .wrapper {
-        max-width: 1608px;
+        padding: 0;
+    }
+    footer div {
+        padding: 3rem;
     }
 }
