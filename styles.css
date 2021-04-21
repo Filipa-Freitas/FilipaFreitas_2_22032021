@@ -618,7 +618,7 @@ footer li {
 }
 @media only screen and (min-width: 1700px) {
     .container-lodging-cards .card .card-text h3 {
-        min-height: 1rem;
+        min-height: auto;
     }
     .wrapper {
         max-width: 1704px;
