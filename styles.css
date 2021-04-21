@@ -18,6 +18,11 @@ time, mark, audio, video {
 	font: inherit;
 	vertical-align: baseline;
 }
+:root {
+    --primary-color: #0065FC;
+    --secondary-color: #DEEBFF;
+    --tertiary-color: #F2F2F2;
+}
 body {
     font-family: Raleway, Arial, Helvetica, sans-serif;
     font-size: 62.5%;
@@ -25,40 +30,50 @@ body {
     background-color: white;
     box-sizing: border-box;
 }
-h1, h2, h3 {
-    font-weight: bold;
-}
-h1, h2 {
-    font-size: 1.5rem;
-}
-h3, li, p {
-    font-size: 1rem;
-}
-h3 {
-    margin-bottom: 0.5em;
-}
-li, p {
-    font-weight: normal;
-}
 li {
     list-style: none;
-}
-p {
-    margin-bottom: 0.5em;
 }
 a {
     text-decoration: none;
     color: black;
 }
-.fa-star, .filter i,
-.search .info i {
-    color: #0065FC;
+/*font*/
+h1, h2, .popular-title i {
+    font-size: 1.5rem;
 }
-.fa-star{
+.search button,
+.search .fa-map-marker-alt,
+.filter-title {
+    font-size: 1.2rem;
+}
+h3, li, p, .subscribe a,
+.filter span,
+.filter i,
+#lodging .show {
+    font-size: 1rem;
+}
+.fa-star {
     font-size: 0.7rem;
 }
 .card-text p {
     font-size: 0.8rem;
+}
+h3, p {
+    margin-bottom: 0.5em;
+}
+h1, h2, h3, .subscribe a,
+.search input,
+.filter-title,
+.filter span,
+.card-text strong,
+#lodging .show {
+    font-weight: bold;
+}
+/*color*/
+.fa-star, .filter i,
+.search .info i,
+.subscribe a {
+    color: var(--primary-color);
 }
 /*header*/
 header {
@@ -75,11 +90,6 @@ header .container-logo {
 header .subscribe {
     margin-right: 5%;
 }
-.subscribe a {
-    font-weight: bold;
-    font-size: 1rem;
-    color: #0065FC;
-}
 header .logo img {
     width: 100px;
     height: 46.4px;
@@ -94,13 +104,13 @@ header .container-nav li {
     width : 50%;
     text-align: center;
     padding-bottom: 3%;
-    border-bottom: 2px solid #F2F2F2;
+    border-bottom: 2px solid var(--tertiary-color);
 }
 header .container-nav .li-lodging {
-    border-bottom: 2px solid #0065FC;
+    border-bottom: 2px solid var(--primary-color);
 }
 header .container-nav .li-lodging a {
-    color: #0065FC;
+    color: var(--primary-color);
 }
 /*search section*/
 .search {
@@ -125,12 +135,11 @@ h1 {
 }
 .search input {
     font-size: 1.1rem;
-    font-weight: bold;
     font-family: raleway, Arial, Helvetica, sans-serif;
     height: 3rem;
     padding: 0.8em;
-    border-top: solid 2px #F2F2F2;
-    border-bottom: solid 2px #F2F2F2;
+    border-top: solid 2px var(--tertiary-color);
+    border-bottom: solid 2px var(--tertiary-color);
     border-left: none;
     border-right: none;
     width: 100%;
@@ -140,7 +149,7 @@ input[type="search"]::-webkit-search-cancel-button {
 }
 input:focus {
     outline: none;
-    background-color: #F2F2F2;  
+    background-color: var(--tertiary-color);  
 }
 .search .only-mobile-button .visiually-hidden {
     visibility: hidden;
@@ -148,8 +157,7 @@ input:focus {
     right: 2px;
 }
 .search .only-mobile-button {
-    font-size: 1.2rem;
-    background-color: #0065FC;
+    background-color: var(--primary-color);
     border: none;
     border-radius: 15px;
     padding: 0 1rem;
@@ -166,22 +174,16 @@ input:focus {
 }
 .container-search .i-container {
     border-radius: 15px 0 0 15px;
-    background-color: #F2F2F2;
+    background-color: var(--tertiary-color);
     padding: 0.9rem;
-}
-.search .fa-map-marker-alt, .filter-title {
-    font-size: 1.2rem;
 }
 .filters {
     margin-bottom: 3%;
 }
 .filter-title {
-    font-weight: bold;
     margin-bottom: 2%;
 }
 .filter span {
-    font-size: 1rem;
-    font-weight: bold;
     margin-left: 2.5rem;
 }
 .container-filters {
@@ -198,16 +200,13 @@ input:focus {
     display: flex;
     justify-content: flex-start;
     align-items: center;  
-    border: solid 3px #F2F2F2;
+    border: solid 3px var(--tertiary-color);
     border-radius: 8rem;
     position: relative;
     padding: 0.7rem 1rem;
 }
-.filter i {
-    font-size: 1rem;
-}
 .filter .i-container {
-    background-color: #DEEBFF;
+    background-color: var(--secondary-color);
     border-radius: 50%;
     padding: 1rem;
     position: absolute;
@@ -215,7 +214,7 @@ input:focus {
 }
 .search .info i {
     font-size: 0.6rem;
-    border: #F2F2F2 solid 1px;
+    border: var(--tertiary-color) solid 1px;
     border-radius: 50%;
     height: 2em;
     width: 2em;
@@ -229,28 +228,30 @@ input:focus {
     margin-left: 2.5%;
 }
 /* sections */
-.card-text strong {
-    font-weight: bold;
-}
 .card {
     border-radius: 20px;
     box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
 }
-/*popular section*/
-.popular {
-    background-color: #F2F2F2;
+.card-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
 }
-.container-popular-cards {
-    padding: 5% 5% 5% 5%;
+/*popular section*/
+.popular, footer {
+    background-color: var(--tertiary-color);
+}
+.container-popular-cards,
+#lodging,
+#activities {
+    padding: 5%;
 }
 .popular-title {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 5% 5% 0 5%;
-}
-.popular-title i {
-    font-size: 1.5rem;
 }
 .container-popular-cards .card {
     display: flex;
@@ -265,14 +266,7 @@ input:focus {
     border-radius: 15px 0 0 15px; 
 }
 .container-popular-cards .card .card-img img {
-    width: 100%;
-    height: 100%;
     border-radius: 15px 0 0 15px;
-    object-fit: cover;
-    object-position: center;
-}
-.container-popular-cards a {
-    display: block;
 }
 .container-popular-cards .card .card-text {
     display: flex;
@@ -284,17 +278,11 @@ input:focus {
 }
 .container-popular-cards .two .card-text i:nth-last-child(1),
 .container-popular-cards .three .card-text i:nth-last-child(1) {
-    color: #F2F2F2;
+    color: var(--tertiary-color);
 }
 /*lodging*/
-#lodging {
-    padding: 5% 5% 5% 5%;
-}
-#lodging .show {
-    font-size: 1rem;
-    font-weight: bold;
-}
-.container-lodging-cards {
+.container-lodging-cards,
+.container-activities-cards {
     margin: 5% 0 5% 0;
 }
 .container-lodging-cards .card {
@@ -305,41 +293,26 @@ input:focus {
     padding: 0.3rem;
 }
 .container-lodging-cards .card .card-img {
-    height: 60%;
-    min-height: 60%;
+    max-height: 60%;
+    height: 100%;
     border-radius: 15px 15px 0px 0px;
 }
-.container-lodging-cards .card .card-img img {
-    height: 100%;
-    width: 100%;  
+.container-lodging-cards .card .card-img img,
+.container-activities-cards .card .card-img img {
     border-radius: 15px 15px 0 0;
-    object-fit: cover;
-    object-position: center;
 }
 .container-lodging-cards .card-text {
     border-radius: 0px 0 15px 15px;
     text-align: left;
     padding: 0.5rem;
 }
-.container-lodging-cards .card.one .card-text i:nth-last-child(1) {
-    color: #F2F2F2;
-}
-.container-lodging-cards .card.three .card-text i:nth-last-child(1) {
-    color: #F2F2F2;
-}
-.container-lodging-cards .card.four .card-text i:nth-last-child(-n+2) {
-    color: #F2F2F2;
-}
+.container-lodging-cards .card.one .card-text i:nth-last-child(1),
+.container-lodging-cards .card.three .card-text i:nth-last-child(1),
+.container-lodging-cards .card.four .card-text i:nth-last-child(-n+2),
 .container-lodging-cards .card.five .card-text i:nth-last-child(1) {
-    color: #F2F2F2;
+    color: var(--tertiary-color);
 }
 /*activities*/
-#activities {
-    padding: 5% 5% 5% 5%;
-}
-.container-activities-cards {
-    margin: 5% 0 5% 0;
-}
 .container-activities-cards .card {
     display: block;
     height: 12rem;
@@ -356,16 +329,8 @@ input:focus {
     min-height: 70%;
     border-radius: 15px 15px 0px 0px;
 }
-.container-activities-cards .card .card-img img {
-    height: 100%;
-    width: 100%;  
-    border-radius: 15px 15px 0 0;
-    object-fit: cover;
-    object-position: center;
-}
 /*footer*/
 footer {
-    background: #F2F2F2;
     padding: 9% 5% 5% 5%;
 }
 footer div {
@@ -386,10 +351,8 @@ footer li {
     }
     .search .only-tablet-desktop-button {
         display: inline;
-        font-size: 1.2rem;
-        font-weight: normal;
         color: white;
-        background-color: #0065FC;
+        background-color: var(--primary-color);
         border: none;
         border-radius: 0 15px 15px 0;
         padding: 0 1rem;
@@ -415,7 +378,10 @@ footer li {
         flex-wrap: wrap;
         margin-bottom: 0;
     }
-    .container-lodging-cards .card {
+    .container-lodging-cards .card,
+    .container-activities-cards .one,
+    .container-activities-cards .four,
+    .container-activities-cards .container-small {
         margin-bottom: 3rem;
     }
     .container-lodging-cards .card, 
@@ -423,14 +389,9 @@ footer li {
         width: 46%;
     } 
     /* activities section */
-
-    .container-activities-cards .card {
-        margin-bottom: 0;
-    }
     .container-activities-cards .one,
     .container-activities-cards .four {
         height: 25rem;
-        margin-bottom: 3rem;
     }
     .container-activities-cards .one .card-img,
     .container-activities-cards .four .card-img {
@@ -442,13 +403,13 @@ footer li {
         justify-content: space-between;
         align-items: stretch;
         width: 48%;
-        margin-bottom: 3rem;
     }
     .container-activities-cards .container-small .card.two-small,
     .container-activities-cards .container-small .card.three-small,
     .container-activities-cards .container-small .card.five-small,
     .container-activities-cards .container-small .card.six-small {
         width: 100%;
+        margin-bottom: 0;
     }
     /* footer */
     footer .wrapper {
@@ -477,7 +438,7 @@ footer li {
     .card,
     #lodging .show,
     footer a {
-        transition: 0.3s cubic-bezier(.25,.8,.25,1);
+        transition: all 0.3s cubic-bezier(.25,.8,.25,1);
     }
     header .subscribe a {
         padding: 2rem 0 2rem 0;
@@ -505,14 +466,14 @@ footer li {
         border-top: 2px solid transparent;
     }
     header .container-nav li:hover {
-        border-top: 2px solid #0065FC;
+        border-top: 2px solid var(--primary-color);
     }
     header .container-nav li a:hover {
-        color: #0065FC;
+        color: var(--primary-color);
     }
     header .container-nav .li-lodging {
         border-bottom: none;
-        border-top: 2px solid #0065FC;
+        border-top: 2px solid var(--primary-color);
     }
     /* search section */
     .search {
@@ -536,7 +497,7 @@ footer li {
         margin-bottom: 3rem;
     }
     .filter:hover .i-container {
-        background-color: #0065FC;
+        background-color: var(--primary-color);
     }
     .filter {
         margin-right: 2rem;
@@ -579,7 +540,7 @@ footer li {
     }
     /* lodging section */
     #lodging {
-        background-color: #F2F2F2;
+        background-color: var(--tertiary-color);
         border-radius: 1rem;
         margin: 0;
         flex: 2;
@@ -656,11 +617,14 @@ footer li {
     }
 }
 @media only screen and (min-width: 1700px) {
+    .container-lodging-cards .card .card-text h3 {
+        min-height: 1rem;
+    }
     .wrapper {
-        max-width: 1604px;
+        max-width: 1704px;
         margin: auto;
     }
     footer .wrapper {
-        max-width: 1508px;
+        max-width: 1608px;
     }
 }
